@@ -10,7 +10,7 @@ function AllAnswers() {
   useEffect(() => {
     const getAllAnswers = async () => {
       const data = await axios.get(
-        "http://127.0.0.1:8000/answers"
+        "https://pickfu-challenge-api.herokuapp.com/answers"
       );
       const response: Record<string, string> = data.data;
       setAnswer(response.data as unknown as Record<string, string>[]);
