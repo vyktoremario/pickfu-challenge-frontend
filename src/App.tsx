@@ -6,13 +6,11 @@ import QuestionForm from "./Components/QuestionForm/QuestionForm";
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 
 export const client = new W3CWebSocket(
-  "wss://pickfu-challenge-api.herokuapp.com/"
+  "ws://127.0.0.1:8000/"
 );
-console.log(client);
 function App() {
   useEffect(() => {
     client.onopen = () => {
-      console.log(client.readyState);
       console.log("Connected on " + new Date());
     };
   }, []);

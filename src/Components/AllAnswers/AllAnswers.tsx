@@ -10,9 +10,8 @@ function AllAnswers() {
   useEffect(() => {
     const getAllAnswers = async () => {
       const data = await axios.get(
-        "https://pickfu-challenge-api.herokuapp.com/answers"
+        "http://127.0.0.1:8000/answers"
       );
-      console.log(data.data);
       const response: Record<string, string> = data.data;
       setAnswer(response.data as unknown as Record<string, string>[]);
     };
@@ -21,7 +20,6 @@ function AllAnswers() {
 
   useEffect(() => {
     client.onmessage = (message) => {
-      console.log(message.data);
       const data = JSON.parse(message.data as string);
       if (answer.length >= 100) {
         answer.splice(answer.length - 1, 1);
