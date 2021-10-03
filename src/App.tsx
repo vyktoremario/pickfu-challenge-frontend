@@ -8,14 +8,12 @@ import { w3cwebsocket as W3CWebSocket } from "websocket";
 export const client = new W3CWebSocket(
   "wss://pickfu-challenge-api.herokuapp.com/"
 );
-console.log(client.OPEN)
-client.onopen = () => {
-  console.log("Testing");
-};
+console.log(client);
 function App() {
   useEffect(() => {
     client.onopen = () => {
-      console.log("Testing");
+      console.log(client.readyState);
+      console.log("Connected on " + new Date());
     };
   }, []);
 
