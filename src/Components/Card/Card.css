@@ -1,0 +1,16 @@
+.card {
+    color: black;
+    background-color: aliceblue;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card__answer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.card:hover {
+    background-color: whitesmoke;
+    color: black;
+}

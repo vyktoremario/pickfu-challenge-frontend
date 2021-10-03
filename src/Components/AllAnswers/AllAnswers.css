@@ -1,0 +1,13 @@
+*{
+    word-wrap: break-word;
+  }
+
+.all-answers {
+    width: 50%;
+    margin: 10px auto;
+    color: black;
+}
+
+.all-answers > h1 {
+    text-align: center;
+}

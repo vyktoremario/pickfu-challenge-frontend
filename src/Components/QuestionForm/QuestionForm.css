@@ -1,0 +1,86 @@
+.questionForm {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.questionForm__container {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.questionForm__form {
+  display: flex;
+  align-items: center;
+}
+
+.questionForm__form > textarea {
+  font-size: 21pt;
+  border-radius: 0 0 0 25px;
+  min-height: 50px;
+  height: 80px;
+  border-top: none;
+  margin-top: 2px;
+  padding-left: 16px;
+  padding-right: 34px;
+  background: rgba(255, 255, 255, 0.8);
+  margin-right: 10px;
+}
+
+.questionForm__form > textarea:focus {
+  border-color: #ffffff;
+  background: #ffffff;
+  outline: none;
+}
+
+.questionForm__form > button {
+  padding: 45px 10px;
+  width: 70px;
+  height: 40px;
+  border: none;
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 11pt;
+  text-align: center;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  color: #002e40;
+}
+
+.questionForm__form > button:hover {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #002e40;
+}
+
+.questionForm__link {
+  text-decoration: none;
+  color: rgb(25, 133, 122);
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.questionForm__link:hover {
+  color: blueviolet;
+}
+
+.questionForm__title {
+  font-family: "Amatic SC", cursive;
+  color: #000000;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.questionForm__span {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
